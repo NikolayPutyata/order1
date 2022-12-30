@@ -1,0 +1,12 @@
+@mixin content-title($color) {
+	@extend %content-title-styles;
+	color: $color;
+}
+
+@mixin filter-button-styles($ff, $fw, $fs, $lh, $ls) {
+	font-family: $ff;
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}

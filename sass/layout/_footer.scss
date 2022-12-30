@@ -1,0 +1,128 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	background-color: $secondary-bg-color;
+
+	&__container {
+		@media screen and (max-width: 1199px) {
+			text-align: center;
+		}
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			align-items: baseline;
+		}
+
+		@media screen and (max-width: 1199px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+
+	&__logo {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	&__left-wrap {
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 60px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin-right: 70px;
+		}
+	}
+
+	&__central-wrap {
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 60px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin-right: 93px;
+		}
+	}
+
+	&__right-wrap {
+		@media screen and (min-width: 1200px) {
+			flex-grow: 1;
+		}
+	}
+
+	&__right-text,
+	&__central-text {
+		margin-bottom: 20px;
+
+		@include content-title($secondary-title-color);
+		font-weight: 700;
+	}
+}
+
+.address__item {
+	font-style: normal;
+	font-size: $main-text-fs;
+	line-height: 1.71;
+	letter-spacing: $main-text-ls;
+	color: $secondary-title-color;
+
+	& + & {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 9px;
+	}
+}
+
+.address__link {
+	color: inherit;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.subscribe {
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
+
+.subscribe__email {
+	width: 100%;
+	min-height: 50px;
+	padding: 15px;
+
+	color: $secondary-title-color;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	cursor: pointer;
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+
+	// @media screen and (min-width: 768px) and (max-width: 1199px) {
+	// 	width: 450px;
+	// }
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 12px;
+	}
+}
+
+.subscribe__button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subscribe__icon {
+	margin-left: 10px;
+	fill: currentColor;
+}

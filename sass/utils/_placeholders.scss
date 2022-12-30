@@ -1,0 +1,44 @@
+%section-title-styles {
+	font-size: $section-title-fs;
+	line-height: $section-title-lh;
+	letter-spacing: $section-title-ls;
+	text-align: center;
+}
+
+%content-title-styles {
+	font-size: $content-title-fs;
+	line-height: $content-title-lh;
+	letter-spacing: $content-title-ls;
+	text-transform: uppercase;
+}
+
+%logo-styles {
+	font-family: $logo-ff, sans-serif;
+	font-weight: $logo-fw;
+	font-size: $logo-fs;
+	line-height: $logo-lh;
+	letter-spacing: $logo-ls;
+}
+
+%hero-title-styles {
+	font-weight: $hero-title-fw;
+	font-size: $hero-title-fs;
+	line-height: $hero-title-lh;
+	letter-spacing: $hero-title-ls;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+%header-link-styles {
+	font-weight: $header-link-fw;
+	font-size: $header-link-fs;
+	line-height: $header-link-lh;
+	letter-spacing: $header-link-ls;
+}
+
+%team-text-styles {
+	font-size: $team-text-fs;
+	line-height: $team-text-lh;
+	letter-spacing: $team-text-ls;
+	text-align: center;
+}

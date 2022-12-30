@@ -1,0 +1,17 @@
+.logo {
+	@extend %logo-styles;
+
+	color: $accent-color;
+
+	&--dark {
+		color: #000000;
+	}
+
+	&--light {
+		color: $secondary-title-color;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+	}
+}

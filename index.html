@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/modern-normalize.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<header class="header block">
+			<div class="container header__container">
+				<div class="logo-flex">
+					<a href="#" class="logo header__logo">
+						Frolov
+						<span lang="en" class="logo--dark">Gas</span>
+					</a>
+					<a href="#poslugi" class="sitenav__link-mobile-special">Послуги</a>
+				</div>
+				<nav>
+					<ul class="sitenav">
+						<li class="sitenav__item">
+							<a href="#" class="sitenav__link">Головна</a>
+						</li>
+						<li class="sitenav__item">
+							<a href="#poslugi" class="sitenav__link">Послуги</a>
+						</li>
+						<li class="sitenav__item">
+							<a href="#contacts" class="sitenav__link">Контакти</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="contacts">
+					<li class="contacts__item">
+						<a href="mailto:info@devstudio.com" class="contacts__link">
+							<svg class="contacts__icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="tel:+380961111111" class="contacts__link">
+							<svg class="contacts__icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+				<button type="button" class="open-menu-button">
+					<svg class="open-menu-icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-mob-menu"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mobile-menu is-hidden">
+				<div class="container mobile-menu__container">
+					<div class="mobile-menu__top">
+						<button type="button" class="close-menu-button">
+							<svg class="close-menu-icon" width="40" height="40">
+								<use href="./images/icons.svg#icon-mob-menu-close"></use>
+							</svg>
+						</button>
+						<ul class="mobile-sitenav">
+							<li class="mobile-sitenav__item">
+								<a href="#" class="mobile-sitenav__link mobile-sitenav__link--current">Головна</a>
+							</li>
+							<li class="mobile-sitenav__item">
+								<a href="#poslugi" class="mobile-sitenav__link">Послуги</a>
+							</li>
+							<li class="mobile-sitenav__item">
+								<a href="#contacts" class="mobile-sitenav__link">Контакти</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile-menu__bottom">
+						<ul class="mobile-contacts">
+							<li class="mobile-contacts__item">
+								<a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+							</li>
+							<li class="mobile-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-socials">
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link">Viber</a>
+							</li>
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link">Telegram</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!--Шапка-->
+			<section class="hero block">
+				<div class="container">
+					<h1 class="hero__title">
+						Ремонт, установка, обслуговування
+						<br />
+						газового обладнання
+					</h1>
+					<button type="button" class="button" data-modal-open>Залишити заявку</button>
+				</div>
+			</section>
+			<!-- Особенности -->
+			<section class="section block">
+				<div class="container">
+					<h2 class="section__title visually-hidden">Особенности</h2>
+					<ul class="features">
+						<li class="features__item">
+							<div class="picture-up">
+								<picture class="picture-present">
+									<source srcset="./images/card11.jpg 1x, ./images/card11@2x.jpg 2x" media="(min-width:1200px)" />
+									<source
+										srcset="./images/card11-tab.jpg 1x, ./images/card11-tab@2x.jpg 2x"
+										media="(min-width:768px)"
+									/>
+									<source srcset="./images/card11-mob.jpg 1x, ./images/card11-mob@2x.jpg 2x" />
+									<img src="./images/card11.jpg" alt="Фото Вадима" />
+								</picture>
+							</div>
+							<h3 class="features__title">Підбір, консультація та продаж обладнання</h3>
+						</li>
+						<li class="features__item">
+							<div class="picture-up">
+								<picture class="picture-present">
+									<source srcset="./images/card10.jpg 1x, ./images/card10@2x.jpg 2x" media="(min-width:1200px)" />
+									<source
+										srcset="./images/card10-tab.jpg 1x, ./images/card10-tab@2x.jpg 2x"
+										media="(min-width:768px)"
+									/>
+									<source srcset="./images/card10-mob.jpg 1x, ./images/card10-mob@2x.jpg 2x" />
+									<img src="./images/card10.jpg" alt="Фото Вадима" />
+								</picture>
+							</div>
+
+							<h3 class="features__title">Монтаж обладнання</h3>
+						</li>
+						<li class="features__item">
+							<div class="picture-up">
+								<picture class="picture-present">
+									<source srcset="./images/card13.jpg 1x, ./images/card13@2x.jpg 2x" media="(min-width:1200px)" />
+									<source
+										srcset="./images/card13-tab.jpg 1x, ./images/card13-tab@2x.jpg 2x"
+										media="(min-width:768px)"
+									/>
+									<source srcset="./images/card13-mob.jpg 1x, ./images/card13-mob@2x.jpg 2x" />
+									<img src="./images/card13.jpg" alt="Фото Вадима" />
+								</picture>
+							</div>
+							<h3 class="features__title">Введення в експлуатацію обладнання</h3>
+						</li>
+						<li class="features__item">
+							<div class="picture-up">
+								<picture class="picture-present">
+									<source srcset="./images/card12.jpg 1x, ./images/card12@2x.jpg 2x" media="(min-width:1200px)" />
+									<source
+										srcset="./images/card12-tab.jpg 1x, ./images/card12-tab@2x.jpg 2x"
+										media="(min-width:768px)"
+									/>
+									<source srcset="./images/card12-mob.jpg 1x, ./images/card12-mob@2x.jpg 2x" />
+									<img src="./images/card12.jpg" alt="Фото Вадима" />
+								</picture>
+							</div>
+
+							<h3 class="features__title">Технічне обслуговування та ремонт</h3>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Наша команда -->
+			<section class="section section--another-background block specialist-block">
+				<div class="container" id="contacts">
+					<h2 class="section__title">Професійний спеціаліст</h2>
+					<div class="main-picture">
+						<picture class="main-picture-1">
+							<source srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x" media="(min-width:1200px)" />
+							<source srcset="./images/card1-tab.jpg 1x, ./images/card1-tab@2x.jpg 2x" media="(min-width:768px)" />
+							<source srcset="./images/card1-mob.jpg 1x, ./images/card1-mob@2x.jpg 2x" />
+							<img src="./images/card1.jpg" alt="Фото Вадима" />
+						</picture>
+					</div>
+					<div class="team__content">
+						<h3 class="team__title">Фролов Вадим</h3>
+						<p class="team__text">Сервісний інженер, офіційний дистриб'ютор компанії ITALTHERM, газовик 4-го розряду</p>
+						<button type="button" class="consult-button" data-modal-open>Замовити консультацію</button>
+					</div>
+				</div>
+			</section>
+			<section class="section block" id="poslugi">
+				<div class="container price-container">
+					<h2 class="section__title">Прайс-лист</h2>
+					<ul class="price-list">
+						<li class="prise-list-item">Діагностика несправності газового котла або колонки - від 450 грн.</li>
+
+						<li class="prise-list-item">Ремонт або налаштування газового котла або колонки - від 500 грн.</li>
+
+						<li class="prise-list-item">Промивання теплообмінника – від 1500 грн.</li>
+
+						<li class="prise-list-item">Підключення виносного датчика температури - 650 грн.</li>
+
+						<li class="prise-list-item">Монтаж котла - від 3500 грн.</li>
+
+						<li class="prise-list-item">Монтаж колонки - від 950 грн.</li>
+
+						<li class="prise-list-item">Ремонт плати управління - від 2000 грн.</li>
+
+						<li class="prise-list-item">Монтаж гребінки - 1200 грн.</li>
+
+						<li class="prise-list-item">Монтаж радіатора - 950 грн.</li>
+
+						<li class="prise-list-item">Прокладання труб-35 грн. 1м.п.</li>
+
+						<li class="prise-list-item">Монтаж теплої підлоги – 150 грн. 1 м2</li>
+
+						<li class="prise-list-item">Промивання теплої підлоги – від 450 грн. за контур</li>
+
+						<li class="prise-list-item">
+							Тех обслуговування котла - 850 грн.
+							<br />
+							- очищення камери згоряння
+							<br />
+							- закачування розширювального бака
+							<br />
+							- налаштування та перевірка працездатності котла або колонки
+						</li>
+
+						<li class="prise-list-item">Онлайн консультації абоненту – 350 грн.</li>
+					</ul>
+					<p class="price-list-attention">Увага! Кожне замовлення індивідуальне, деталі уточнюйте у спеціаліста</p>
+				</div>
+			</section>
+			<section class="section section--another-background block">
+				<div class="container">
+					<h2 class="section__title special_title_maps" id="delivery-zone">Зона обслуговування</h2>
+					<div class="map_first">
+						<div class="map">
+							<iframe src="" class="map-map" width="330" height="350"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer block">
+			<div class="container footer__container">
+				<div class="footer__left-wrap">
+					<a href="./index.html" class="logo footer__logo">
+						Frolov
+						<span lang="en" class="logo--light">Gas</span>
+					</a>
+					<address>
+						<ul class="address">
+							<li class="address__item">
+								<a href="https://goo.gl/maps/Sd4Lendt8BvaJmYn8" target="_blank" class="address__link">
+									г. Киев, пр-т Леси Украинки, 26
+								</a>
+							</li>
+							<li class="address__item">
+								<a href="mailto:info@example.com" class="address__link">info@example.com</a>
+							</li>
+							<li class="address__item">
+								<a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<!-- <div class="footer__central-wrap">
+					<p class="footer__central-text">Присоединяйтесь</p>
+					<ul class="socials">
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link--theme-dark">
+								<svg class="socials__icon" width="20" height="20">
+									<use href="./images/icons.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link--theme-dark">
+								<svg class="socials__icon" width="20" height="20">
+									<use href="./images/icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link--theme-dark">
+								<svg class="socials__icon" width="20" height="20">
+									<use href="./images/icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link--theme-dark">
+								<svg class="socials__icon" width="20" height="20">
+									<use href="./images/icons.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal__close" data-modal-close>
+					<svg class="modal__close-icon" width="18" height="18">
+						<use href="./images/icons.svg#icon-modal-close"></use>
+					</svg>
+				</button>
+				<form action="#" class="application">
+					<p class="application__title">Залиште заявку, ми Вам зателефонуємо</p>
+					<label class="application__label">
+						Ім'я
+						<span class="application__input-wrap">
+							<input type="text" name="application-name" class="application__input" />
+							<svg class="application__icon" width="18" height="18">
+								<use href="./images/icons.svg#icon-form-name"></use>
+							</svg>
+						</span>
+					</label>
+					<label class="application__label">
+						Телефон
+						<span class="application__input-wrap">
+							<input type="tel" name="application-tel" class="application__input" />
+							<svg class="application__icon" width="18" height="18">
+								<use href="./images/icons.svg#icon-form-tel"></use>
+							</svg>
+						</span>
+					</label>
+					<label class="application__label application__label--no-margin-bottom">
+						Опишіть проблему
+						<textarea name="application-comment" class="application__comment" placeholder="Введіть текст"></textarea>
+					</label>
+					<label class="policy">
+						<input type="checkbox" class="policy__checkbox" name="policy" value="accept" />
+						<span class="policy__item">
+							<svg class="policy__icon" width="16" height="15">
+								<use href="./images/icons.svg#icon-check"></use>
+							</svg>
+						</span>
+						<span>Погоджуюсь на обробку моїх даних</span>
+					</label>
+
+					<button type="submit" class="button">Відправити</button>
+				</form>
+			</div>
+		</div>
+		<div class="t651__btn">
+			<a href="tel:+380936644576">
+				<div class="t651__btn_wrapper">
+					<svg
+						class="t651__icon"
+						style="fill: #ffffff"
+						xmlns="http://www.w3.org/2000/svg"
+						width="30px"
+						height="30px"
+						viewBox="0 0 19.3 20.1"
+					>
+						<desc>Call</desc>
+						<path d="M4.6 7.6l-.5-.9 2-1.2L4.6 3l-2 1.3-.6-.9 2.9-1.7 2.6 4.1"></path>
+						<path
+							d="M9.9 20.1c-.9 0-1.9-.3-2.9-.9-1.7-1-3.4-2.7-4.7-4.8-3-4.7-3.1-9.2-.3-11l.5.9C.2 5.7.4 9.7 3 13.9c1.2 2 2.8 3.6 4.3 4.5 1.1.6 2.7 1.1 4.1.3l1.9-1.2L12 15l-2 1.2c-1.2.7-2.8.3-3.5-.8l-3.2-5.2c-.7-1.2-.4-2.7.8-3.5l.5.9c-.7.4-.9 1.3-.5 2l3.2 5.2c.4.7 1.5.9 2.2.5l2.8-1.7 2.6 4.1-2.8 1.7c-.7.5-1.4.7-2.2.7zM13.7 11.3l-.9-.3c.4-1.1.2-2.2-.4-3.1-.6-1-1.7-1.6-2.8-1.7l.1-1c1.5.1 2.8.9 3.6 2.1.7 1.2.9 2.7.4 4z"
+						></path>
+						<path
+							d="M16.5 11.9l-1-.3c.5-1.8.2-3.7-.8-5.3-1-1.6-2.7-2.6-4.7-2.9l.1-1c2.2.3 4.2 1.5 5.4 3.3 1.2 1.9 1.6 4.1 1 6.2z"
+						></path>
+						<path
+							d="M18.9 12.5l-1-.3c.7-2.5.2-5.1-1.1-7.2-1.4-2.2-3.7-3.6-6.3-4l.1-1c2.9.4 5.4 2 7 4.4 1.6 2.4 2.1 5.3 1.3 8.1z"
+						></path>
+					</svg>
+				</div>
+			</a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$("a[href*='#']").on("click", function (e) {
+					var anchor = $(this);
+					$("html, body")
+						.stop()
+						.animate(
+							{
+								scrollTop: $(anchor.attr("href")).offset().top,
+							},
+							1300,
+						);
+					e.preventDefault();
+					return false;
+				});
+			});
+		</script>
+	</body>
+	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
+</html>
