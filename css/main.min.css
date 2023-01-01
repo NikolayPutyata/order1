@@ -1232,7 +1232,6 @@ img {
 	color: red;
 }
 .sitenav__link-mobile-special {
-	margin-left: 200px;
 	color: #000000;
 	font-weight: 500;
 	font-style: 15px;
@@ -1245,4 +1244,8 @@ img {
 	.sitenav__link-mobile-special {
 		display: none;
 	}
+}
+.logo-flex {
+	display: inline;
+	justify-content: space-between;
 }
